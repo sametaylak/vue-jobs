@@ -16,24 +16,33 @@ npm i vue-jobs --save
 import VueJobs from 'vue-jobs'
 
 Vue.use(VueJobs)
-
-new Vue({
-  // your vue config
-  jobsSettings: new VueJobs(),
-})
 ```
 
-### 3. Use in your components
+### 3. Uses
 
 ```vue
-<template>
-  <vue-jobs />
-</template>
-
 <script>
   export default {
     async created() {
-      console.log(this.$jobs);
+      this.$jobs.run(() => {
+				const a = 5;
+				const b = 6;
+				return a + b;
+			}).then(console.log)
+    },
+  };
+</script>
+```
+
+```vue
+<script>
+  export default {
+    async created() {
+      this.$jobs.run(() => {
+				const a = 5;
+				const b = 6;
+				return a + b;
+			}).then(console.log)
     },
   };
 </script>

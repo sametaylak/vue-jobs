@@ -1,17 +1,15 @@
 {
   "name": "vue-jobs",
   "version": "0.0.1",
-  "description": "Vue Plugin Boilerplate",
+  "description": "Vue Jobs",
   "main": "dist/vue-jobs.js",
   "types": "src/types/index.d.ts",
   "files": [
     "dist",
-    "src",
-    "nuxt"
+    "src"
   ],
   "scripts": {
     "test": "exit 0;",
-    "storybook": "start-storybook",
     "precommit": "lint-staged",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "example:kitchensink": "poi -s examples/kitchensink/index.js"
@@ -32,11 +30,10 @@
   },
   "keywords": [
     "vue",
-    "querystring",
-    "state",
-    "sync"
+    "jobs",
+    "workers"
   ],
-  "author": "Fatih Kadir Akin <fatihkadirakin@gmail.com>",
+  "author": "Samet Aylak <sametaylak29@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sametaylak/vue-jobs/issues"
@@ -47,8 +44,6 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "@storybook/addon-notes": "^5.1.10",
-    "@storybook/vue": "^5.1.10",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
     "cross-env": "^5.2.0",
