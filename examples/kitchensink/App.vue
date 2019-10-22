@@ -21,9 +21,6 @@
       };
     },
     methods: {
-      testCase() {
-        return 'testCase'
-      },
       withoutJob() {
         this.result = '3.' + pi(30000).slice(1);
       },
@@ -35,7 +32,6 @@
     mounted() {
       let rotation = 0;
       setInterval(() => this.$refs.pie.style.transform = `rotate(${rotation+=10}deg)`, 10);
-      this.$jobs.run(this.testCase).then(console.log)
     }
   };
 </script>
